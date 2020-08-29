@@ -1,0 +1,337 @@
+/*1st header background image color shadow*/
+/*
+.clear-filter[filter-color=green] {
+    background: linear-gradient(0deg,rgba(44,44,44,.2),rgba(34,139,34,.4));
+}
+*/
+
+/*-------Navigation bar-------*/
+
+/*When the screen is small*/
+.sidebar-collapse .navbar-collapse::before {
+    background: linear-gradient(#000000,#3a3a3a 80%);
+}
+
+/*Top navbar*/
+.bg-primary {
+    background-color: #000000!important;
+}
+
+/*End Navbar*/
+[data-background-color=black] {
+    background-color: #000000;
+}
+
+/*-------Sri lanka map logo-------*/
+.brand .map {
+    width: 200px;
+    height: auto;
+    margin-top: 200px;
+    margin-bottom: 40px;    
+}
+
+/*-------Visit to sri lanka heading-------*/
+.brand .h1-seo {
+    font-family: serif;
+    font-size: 5.8em;
+    text-transform: uppercase;
+}
+
+/*-------The pearl of the indian ocean-------*/
+h3.discription {
+    font-family: cursive;
+    font-style: italic;
+    font-size: 2.3rem;
+}
+
+/*-------The nation of smiling people div.section background color-------*/
+div.section {
+    padding: 10px 0;
+    position: relative;
+    background-color: black;
+}
+
+/*-------Sri Lanka - "the nation of smiling people"-------*/
+h3.title {
+    font-weight: 800;
+    padding-top: 5px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/*-------About Sri Lanka-------*/
+p.about-sl {
+    color: white;
+    font-weight: 500;
+    font-size: 19px;
+}
+
+/*-------Welcome msg with company profile-------*/
+.text-box {
+    text-align: center;
+}
+
+.text-box h2 {
+    font-size: 3rem;
+    font-family: Piedra, cursive;
+}
+
+.text-box p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.text-box > div {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*-------Trip Packages-------*/
+.packages {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+/*    min-height: 47vh;*/
+}
+
+.packages {
+	position: relative;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 0 40px;
+}
+
+.packages .box {
+    position: relative;
+    height: 430px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+/*    border: 1px solid #000;*/
+    margin: 15px 5px 15px
+}
+
+.packages .box:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: gray;
+    transform: skew(2deg,2deg);
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    padding: 20px;
+}
+
+.box .content h2 {
+    font-family: serif;
+    position: absolute;
+    top: -60;
+    right: 30px;
+    margin: 0;
+    padding: 0;
+    font-size: 9em;
+    color: rgba(128,128,128,0.5);
+    transition: 0.5s;
+    display: none;
+}
+
+.box:hover .content h2 {
+    top: -20px;
+    display: block;
+}
+
+.box .content h3 {
+    margin: 0 0 10px;
+    padding: 0;
+    font-size: 30px;
+    font-weight: 500;
+    color: black;
+    font-family: serif;
+}
+
+.box .content p {
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-size: 16px;
+    font-weight: 800;
+    color: #b11226;
+}
+
+ul.to-do {
+    list-style-type: square;
+}
+
+.box .content a {
+    position: relative;
+    margin: 20px 0 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid gray;
+    display: inline-block;
+    color: black;
+    transition: 0.5s;
+    transform: translateY(-40px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.box:hover .content a {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.box .content a:hover {
+    color: #000;
+    background: gray;
+}
+
+/*-------Middle Image-------*/
+.middle-image {
+    height: 300px;
+    width: 100%;
+    background: url(destination/middle-image8.jpg);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+    margin-top: 40px;
+    margin-bottom: 40px
+}
+
+.section-inner {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.filter-color {
+    background: linear-gradient(0deg,rgba(44,44,44,.2),rgba(0,0,0,.8));
+}
+
+.middle-text > div {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.middle-text {
+    text-align: center;
+}
+
+.middle-text > div h2 {
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+
+.middle-text > div p {
+    font-weight: 400;
+}
+
+/*-------Why Us-------*/
+.why-us {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.why-us > .box {
+    width: 30%;
+    height: 300px;
+    margin: 20px;
+    box-sizing: border-box;
+    font-size: 50px;
+    text-align: center;
+    
+}
+
+@media screen and (max-width:1200px) {
+    .why-us > .box {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .why-us > .box {
+        width: 90%;
+    }
+}
+
+.why-us > .box img {
+    width: 100px;
+    height: auto;
+}
+
+.why-us > .box h4 {
+    font-size: 26px;
+    font-weight: 600
+}
+
+.why-us > .box p {
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
